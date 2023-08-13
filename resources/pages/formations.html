@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StudyIT</title>
+    <link rel="stylesheet" href="../css/app.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+       <p>
+           <span>Cap</span>Build
+       </p>
+    </div>
+    <ul class="menu">
+        <li> <a href="index.html"> Acceuil </a> </li>
+        <li> <a href="formations.html"> Formations </a> </li>
+        <li> <a href="personnes.html">  Membres </a> </li>
+        <li> <a href="login.html"> S'incrire </a> </li>
+     </ul>
+    <div class="toggle_menu">
+        <span class="center-menu-bar"></span>
+    </div>
+</header>
+
+  <section id="menu">
+      <h4 class="mini_title">Nos Formations</h4>
+      <h2 class="title"> Certifiantes </h2>
+      <div class="dishes">
+          <div class="dish">
+              <img src="../images/python.png">
+              <h2>test</h2>
+              <div class="pop"><span></span>Populaire</div>
+              <div class="desc">
+                  qwesdasd lfd fdsplki uiui iui qwesdasd lfd fdsplki uiui iuiqwesdasd lfd fdsplki uiui iuiqwesdasd lfd fdsplki uiui iui
+              </div>
+              <a href="geniusniveau1.Nombre de Formations"> Plus d'infos </a>
+          </div>
+          <div class="dish">
+              <img src="../images/css.jpg">
+              <p> Nombre de Formations 2</p>
+              <h2>test</h2>
+              <a href="geniusniveau2.Nombre de Formations"> Plus d'infos </a>
+          </div>
+          <div class="dish">
+              <img src="../images/django.jpg">
+              <p> Nombre de Formations 3</p>
+              <h2>test</h2>
+              <a href="geniusniveau3.Nombre de Formations"> Plus d'infos </a>
+          </div>
+
+      </div>
+  </section>
+
+
+
+  <footer>
+    <div class="references">
+        <div class="reference">
+            <img src="../images/computer.png" alt="horloge">
+            <h2>IT KOLA GROUPS </h2>
+            <p></p> 
+        </div>
+        <div class="reference">
+            <img src="../images/endroit.png" alt="horloge">
+            <h2>Dschang-Cameroun</h2>
+            <p></p> 
+        </div>
+        <div class="reference">
+            <img src="../images/telephone.png" alt="horloge">
+            <h2>+237 658395978</h2>
+            <p></p> 
+        </div>
+        <hr>
+    </div>
+    <p class="footer_text">Copyright © 2023 Tous les droits sont réservés. Realise par <span>Joël_yk</span>. </p>
+</footer>
+
+
+  <script>
+      var small_menu = document.querySelector('.toggle_menu')
+      var menu = document.querySelector('.menu')
+      small_menu.onclick=function(){
+          small_menu.classList.toggle('active');
+          menu.classList.toggle('responsive');
+      }
+  </script>
+</body>
+</html>
