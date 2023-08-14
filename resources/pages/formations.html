@@ -6,24 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>StudyIT</title>
     <link rel="stylesheet" href="../css/app.css">
+    <link rel="stylesheet" href="../css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 </head>
 
 <body>
-  <header>
-    <div class="logo">
-       <p>
-           <span>Cap</span>Build
-       </p>
-    </div>
-    <ul class="menu">
-        <li> <a href="index.html"> Acceuil </a> </li>
-        <li> <a href="formations.html"> Formations </a> </li>
-        <li> <a href="personnes.html">  Membres </a> </li>
-        <li> <a href="login.html"> S'incrire </a> </li>
-     </ul>
-    <div class="toggle_menu">
-        <span class="center-menu-bar"></span>
-    </div>
+    <nav id="nav">
+        <div class="nav-wrapper">
+
+            <a href="#" class="brand-logo yellow-text text-accent-3">CapBuild</a>
+            <a href="#" data-target="mobile-demo" class="waves-effect waves-light waves-yellow sidenav-trigger right"><i class="material-icons orange-text accent-4">menu</i></a>
+
+             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li> <a href="index.html" class="grey-text darken-4"> Acceuil </a> </li>
+                <li class="active"> <a href="#" class="grey-text darken-4"> Formations </a> </li>
+                <li> <a href="login.html" class="grey-text darken-4"> S'incrire </a> </li>
+             </ul>
+        </div>
+    </nav>
+     
+    <ul class="sidenav" id="mobile-demo">
+        <li> <a href="index.html" class="orange-text accent-4"> Acceuil </a> </li>
+        <li class="active"> <a href="#" class="orange-text accent-4"> Formations </a> </li>
+        <li> <a href="login.html" class="orange-text accent-4"> S'incrire </a> </li>
+    </ul>
+<header>
 </header>
 
   <section id="menu">
@@ -57,36 +65,50 @@
 
 
 
-  <footer>
-    <div class="references">
-        <div class="reference">
-            <img src="../images/computer.png" alt="horloge">
-            <h2>IT KOLA GROUPS </h2>
-            <p></p> 
-        </div>
-        <div class="reference">
-            <img src="../images/endroit.png" alt="horloge">
-            <h2>Dschang-Cameroun</h2>
-            <p></p> 
-        </div>
-        <div class="reference">
-            <img src="../images/telephone.png" alt="horloge">
-            <h2>+237 658395978</h2>
-            <p></p> 
-        </div>
-        <hr>
+  <div class="before_footer"></div>
+
+<footer>
+    <div class="waves">
+        <div class="wave" id="wave1"></div>
+        <div class="wave" id="wave2"></div>
+        <div class="wave" id="wave3"></div>
+        <div class="wave" id="wave4"></div>
     </div>
-    <p class="footer_text">Copyright © 2023 Tous les droits sont réservés. Realise par <span>Joël_yk</span>. </p>
-</footer>
+    <ul class="social-icon">
+        <li><a href="#"><ion-icon name="logo-facebook"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-twitter"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-instagram"></ion-icon></a></li>
+        <li><a href="#"><ion-icon name="logo-youtube"></ion-icon></a></li>
+    </ul>
+    <ul class="menu">
+        <li><a href="#">Acceuil</a></li>
+        <li><a href="#">A propos</a></li>
+        <li><a href="#">Formations</a></li>
+        <li><a href="#">Equipe</a></li>
+        <li><a href="#">Contactes</a></li>
 
-
-  <script>
-      var small_menu = document.querySelector('.toggle_menu')
-      var menu = document.querySelector('.menu')
-      small_menu.onclick=function(){
-          small_menu.classList.toggle('active');
-          menu.classList.toggle('responsive');
-      }
-  </script>
-</body>
+    </ul>
+   <p>©2023 Copyright CapBuild | Tous les droits sont réservés.</p> 
+    </footer>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="../js/materialize.js"></script>
+        <script>
+                // pour le responsive du menu
+                document.addEventListener('DOMContentLoaded', function() {
+                var elems = document.querySelectorAll('.sidenav');
+                var options = {};
+                var instances = M.Sidenav.init(elems, options);
+            });
+        </script>
+        <script>
+            var small_menu = document.querySelector('.toggle_menu')
+            var menu = document.querySelector('.menu')
+            small_menu.onclick=function(){
+                small_menu.classList.toggle('active');
+                menu.classList.toggle('responsive');
+            }
+        </script>
+    </body>
 </html>

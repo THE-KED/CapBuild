@@ -1,3 +1,4 @@
+
 var txt = [
     "Cette méthode est utilisée pour donner aux séminaristes les éléments leur permettant d’aborder la phase de pédagogie active qui doit suivre.",
     "Ces exercices de mise en pratique de situations relationnelles permettent des prises de conscience ou constituent des entraînements aux techniques d'entretien, que ce soit sur le plan commercial, managérial ou sur le plan des simples relations inter-individuelles. Les rôles se partagent entre les \"protagonistes\" (généralement au nombre de deux) et les observateurs (généralement le reste du groupe). Les observateurs ont un rôle extrêmement actif car l'animateur leur confie des tâches précises d'observation les exerçant à l'analyse des situations vécues. Des permutations permettent à chacun de bénéficier de l'ensemble des acquisitions.Ces exercices peuvent être filmés en vidéo et exploités immédiatement après si les circonstances et le temps le permettent.",

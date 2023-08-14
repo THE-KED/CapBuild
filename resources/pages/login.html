@@ -6,26 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CapBuild</title>
     <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/materialize.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
-<header>
-    <div class="logo">
-        <p>
-            <span>Cap</span>Build
-        </p>
-    </div>
-    
-    <ul class="menu">
-        <li> <a href="index.html"> Acceuil </a> </li>
-        <li> <a href="formations.html"> Formations </a> </li>
-        <li> <a href="personnes.html">  Membres </a> </li>
-        <li> <a href="login.html"> S'incrire </a> </li>
-     </ul>
+    <nav id="nav">
+        <div class="nav-wrapper">
 
-    <div class="toggle_menu">
-        <span class="center-menu-bar"></span>
-    </div>
-</header>
+            <a href="#" class="brand-logo yellow-text text-accent-3">CapBuild</a>
+            <a href="#" data-target="mobile-demo" class="waves-effect waves-light waves-yellow sidenav-trigger right"><i class="material-icons orange-text accent-4">menu</i></a>
+
+             <ul id="nav-mobile" class="right hide-on-med-and-down">
+                <li> <a href="index.html" class="grey-text darken-4"> Acceuil </a> </li>
+                <li> <a href="formations.html" class="grey-text darken-4"> Formations </a> </li>
+                <li class="active"> <a href="#" class="grey-text darken-4"> S'incrire </a> </li>
+             </ul>
+        </div>
+    </nav>
+     
+    <ul class="sidenav" id="mobile-demo">
+        <li> <a href="index.html" class="orange-text accent-4"> Acceuil </a> </li>
+        <li> <a href="formations.html" class="orange-text accent-4"> Formations </a> </li>
+        <li class="active"> <a href="#" class="orange-text accent-4"> S'incrire </a> </li>
+    </ul>
+
 <div class="contain">
 
     <div class="left">
@@ -118,6 +122,17 @@
     </div>
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.12.2/lottie.min.js" integrity="sha512-jEnuDt6jfecCjthQAJ+ed0MTVA++5ZKmlUcmDGBv2vUI/REn6FuIdixLNnQT+vKusE2hhTk2is3cFvv5wA+Sgg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="../js/materialize.js"></script>
+<script>
+
+    // pour le responsive du menu
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.sidenav');
+        var options = {};
+        var instances = M.Sidenav.init(elems, options);
+    });
+</script>
 <script>
 
     document.addEventListener('DOMContentLoaded', function() {
